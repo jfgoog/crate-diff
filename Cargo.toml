@@ -1,0 +1,13 @@
+[package]
+name = "crate-diff"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+crates-index = { version = "2", features = ["git"] }
+reqwest = { version = "0.11.22", features = ["blocking"] }
+tempfile = "3.8.1"
